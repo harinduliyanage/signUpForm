@@ -6,11 +6,59 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <link rel="shortcut icon" href="Img/titleIcon.ico"/>
+        <title>Create your Google Account</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="CSS/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" id="navBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" id="google-img"><img src="Img/google.JPG" align="right"/></div>
+                    <div class="col-md-6"></div><div class="col-md-2" id="signInDiv"><button id="btn-sign-in" class="btn btn">Sing in</button></div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="wraper">
+                <div id="middle"><h1 style="text-align: center">Create your Google Account</h1></div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div>
+                            <h4 style=" text-align: center;font-family: 'Open Sans', arial;color: #555; margin-bottom: 15px; margin-top: 20px;">One account is all you need</h4>
+                            <p style="text-align: center;font-family: 'Open Sans', arial;color: #555; margin-bottom: 30px;">One free account gets you into everything Google.</p>
+                            <div><img id="google-p" src="Img/googleProducts.JPG" align="center"/></div>
+                            <h3 style=" text-align: center;font-family: 'Open Sans', arial;color: #555; margin-top: 50px;">Take it all with you</h3>
+                            <p style="text-align: center;font-family: 'Open Sans', arial;color: #555; margin-bottom: 30px;">Switch between devices, and pick up wherever you left off.</p>
+                            <div><img id="google-p" src="Img/hhh.JPG" align="center"/></div>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 signUp-Box">
+                        <form>
+                            <div>
+                                <label for="email">Name</label><br>
+                                <div class="row">
+                                    <div style="margin-left: 7px;"><input type="email"  id="email" placeholder="First"></div>
+                                    <div style="margin-left: 12px;"><input type="email"  id="email" placeholder="Last"></div>
+                                </div>    
+                            </div>
+                            <div>
+                                <label for="email">Name</label><br>
+                                <div style="margin-left: 7px;"><input type="email"  id="email"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <p>Learn more about why we ask for this information.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+          
+        </footer>
     </body>
 </html>
