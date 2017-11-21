@@ -6,12 +6,25 @@ function nextStep(){
     var day = document.getElementById("day").value;
     var year = document.getElementById("year").value;
     var mobile = document.getElementById("mobile").value;
+    var fName = document.getElementById("fName").value;
+    var lName = document.getElementById("lName").value;
     
     var dayValid=/^([1-9]|[12][0-9]|3[01])$/.test(day); 
     var yearValid=/^\d{4}$/.test(year);
     var validUserName=/^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/.test(userName);
     var validMobile=/^\d{10}$/.test(mobile);
     
+    
+    if(fName===""){
+        document.getElementById("fName").style.borderColor = "red";
+    }else{
+       document.getElementById("fName").style.borderColor = "white";
+    }
+    if(lName===""){
+        document.getElementById("lName").style.borderColor = "red";
+    }else{
+       document.getElementById("lName").style.borderColor = "white";
+    }
     
     if(mobile===""){
         document.getElementById("mobile").style.borderColor = "red";
