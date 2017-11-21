@@ -14,11 +14,12 @@ and open the template in the editor.
         <link href="CSS/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-bottom" id="navBar">
+        <nav class="navbar navbar-default navbar-fixed-bottom" id="navBar" >
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4" id="google-img"><img src="Img/google.JPG" align="right"/></div>
-                    <div class="col-md-6"></div><div class="col-md-2" id="signInDiv"><button id="btn-sign-in" class="btn btn">Sing in</button></div>
+                    <div class="col-lg-6" id="google-img"><img src="Img/google.JPG" style="position: relative; float: left;"/></div>
+                    <div class="col-lg-6"><button id="btn-sign-in" class="btn btn" style="margin-left: 80vw; margin-top: 15px;">Sing in</button></div>
+<!--                    <div class="col-md-6"></div><div class="col-md-2" id="signInDiv"></div>-->
                 </div>
             </div>
         </nav>
@@ -40,23 +41,57 @@ and open the template in the editor.
                     <div class="col-md-4 signUp-Box">
                         <form>
                             <div>
-                                <label for="email">Name</label><br>
+                                <label id="labels" for="email">Name</label>
                                 <div class="row">
-                                    <div style="margin-left: 7px;"><input type="email"  id="email" placeholder="First"></div>
-                                    <div style="margin-left: 12px;"><input type="email"  id="email" placeholder="Last"></div>
+                                    <div style="margin-left: 7px;"><input type="text"  id="fName" placeholder="First"></div>
+                                    <div style="margin-left: 12px;"><input type="text"  id="lName" placeholder="Last"></div>
                                 </div>    
                             </div>
                             <div>
-                                <label for="email">Name</label><br>
-                                <div style="margin-left: 7px;"><input type="email"  id="email"></div>
+                                <label id="labels" for="email">Choose your username</label>
+                                <div style="margin-left: 7px;"><input type="email"  id="userName" style="width: 25vw"></div>
+                                <p><a href="#">I prefer to use my current email address</a></p>
                             </div>
+                            <div>
+                                <label id="labels" for="email">Password</label>
+                                <div style="margin-left: 7px;"><input type="password"  id="pw" style="width: 25vw"></div>
+                            </div>
+                            <div>
+                                <label id="labels" for="email">Confirm your password</label>
+                                <div style="margin-left: 7px;"><input type="password"  id="cnfm-pw" style="width: 25vw"></div>
+                            </div>
+                            <div>
+                                <label id="labels" for="email">Birthday</label>
+                                <div class="row">
+                                    <div style="margin-left: 7px;"><input type="text"  id="email" placeholder="Day"></div>
+                                    <div style="margin-left: 12px;"><input type="text"  id="email" placeholder="Last"></div>
+                                    <div style="margin-left: 12px;"><input type="text"  id="email" placeholder="Last"></div>
+                                </div>    
+                            </div>
+                            <div>
+                                <label id="labels" for="email">Gender</label>
+                                <div style="margin-left: 7px;"><input type="password"  id="email" style="width: 25vw"></div>
+                            </div>
+                            <div>
+                                <label id="labels" for="email">Mobile phone</label>
+                                <div style="margin-left: 7px;"><input type="password"  id="email" style="width: 25vw"></div>
+                            </div>
+                            <div>
+                                <label id="labels" for="email">Your current email address</label>
+                                <div style="margin-left: 7px;"><input type="password"  id="email" style="width: 25vw"></div>
+                            </div>
+                            <div>
+                                <label id="labels" for="email">Location</label>
+                                <div style="margin-left: 7px;"><input type="password"  id="email" style="width: 25vw"></div>
+                            </div>
+                            <div style="position: relative; margin-top: 5px"><button class="btn btn" id="btn-sign-in" onclick="nextStep()">next step</button></div>
                         </form>
                     </div>
-                    <p>Learn more about why we ask for this information.</p>
+                    <div><p id="learn-more"><a href="#">Learn more</a> about why we ask for this information.</p></div>
                 </div>
             </div>
         </div>
-        
+        <hr>
         <footer>
           
         </footer>
