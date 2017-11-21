@@ -15,12 +15,17 @@ and open the template in the editor.
 #google-img{
     padding-left: 0px;
 }
+h1{
+    text-align: center;
+}
 #signInDiv{
-    text-align: right;
-    margin-top: 15px;
+  text-align: center;
+  font-family: 'Open Sans', arial;
+  color: #555;
 }
 
 #btn-sign-in{
+    position: relative;
     float: right;
     background-color: rgb(75, 141, 248);
     color: white;
@@ -42,4 +47,12 @@ and open the template in the editor.
 
 #google-p{
     padding-left: 160px;
+}
+#labels{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#learn-more{
+    padding-left: 57vw;
 }
