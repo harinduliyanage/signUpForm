@@ -43,7 +43,7 @@ and open the template in the editor.
                             <div>
                                 <label id="labels" for="email">Name</label>
                                 <div class="row">
-                                    <div style="margin-left: 7px;"><input type="text"  id="fName" placeholder="First" required=""></div>
+                                    <div style="margin-left: 7px;"><input type="text"  id="fName" placeholder="First"></div>
                                     <div style="margin-left: 12px;"><input type="text"  id="lName" placeholder="Last"></div>
                                 </div>    
                             </div>
@@ -106,7 +106,14 @@ and open the template in the editor.
                             </div>
                             <div>
                                 <label id="labels" for="email">Location</label>
-                                <div style="margin-left: 7px;"><input type="password"  id="email" style="width: 25vw"></div>
+                                <div style="margin-left: 7px;">
+                                    <select id="location" style="width: 100%;">
+                                            <option selected value='1'>Sri Lanka</option>
+                                            <option value='2'>USA</option>
+                                            <option value='3'>UK</option>
+                                            <option value='4'>AUS</option>
+                                        </select> 
+                                </div>
                             </div>
                             <div style="position: relative; margin-top: 5px"><button type="submit" class="btn btn" id="btn-sign-in">next step</button></div>
                         </form> 
