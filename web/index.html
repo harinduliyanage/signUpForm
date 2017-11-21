@@ -39,11 +39,11 @@ and open the template in the editor.
                         </div> 
                     </div>
                     <div class="col-md-4 signUp-Box">
-<!--                        <form>-->
+                        <form onsubmit="event.preventDefault(); nextStep();">
                             <div>
                                 <label id="labels" for="email">Name</label>
                                 <div class="row">
-                                    <div style="margin-left: 7px;"><input type="text"  id="fName" placeholder="First"></div>
+                                    <div style="margin-left: 7px;"><input type="text"  id="fName" placeholder="First" required=""></div>
                                     <div style="margin-left: 12px;"><input type="text"  id="lName" placeholder="Last"></div>
                                 </div>    
                             </div>
@@ -63,9 +63,25 @@ and open the template in the editor.
                             <div>
                                 <label id="labels" for="email">Birthday</label>
                                 <div class="row">
-                                    <div style="margin-left: 7px;"><input type="text"  id="email" placeholder="Day"></div>
-                                    <div style="margin-left: 12px;"><input type="text"  id="email" placeholder="Last"></div>
-                                    <div style="margin-left: 12px;"><input type="text"  id="email" placeholder="Last"></div>
+                                    <div style="margin-left: 7px;"><input type="text"  id="day" placeholder="Day"></div>
+                                    <div style="margin-left: 12px;">
+                                        <select id="month">
+                                            <option value=''>--Select Month--</option>
+                                            <option selected value='1'>Janaury</option>
+                                            <option value='2'>February</option>
+                                            <option value='3'>March</option>
+                                            <option value='4'>April</option>
+                                            <option value='5'>May</option>
+                                            <option value='6'>June</option>
+                                            <option value='7'>July</option>
+                                            <option value='8'>August</option>
+                                            <option value='9'>September</option>
+                                            <option value='10'>October</option>
+                                            <option value='11'>November</option>
+                                            <option value='12'>December</option>
+                                        </select> 
+                                    </div>
+                                    <div style="margin-left: 12px;"><input type="text"  id="year" placeholder="Year"></div>
                                 </div>    
                             </div>
                             <div>
@@ -84,8 +100,8 @@ and open the template in the editor.
                                 <label id="labels" for="email">Location</label>
                                 <div style="margin-left: 7px;"><input type="password"  id="email" style="width: 25vw"></div>
                             </div>
-                            <div style="position: relative; margin-top: 5px"><button class="btn btn" id="btn-sign-in" onclick="nextStep()">next step</button></div>
-                        <!--</form>-->  
+                            <div style="position: relative; margin-top: 5px"><button type="submit" class="btn btn" id="btn-sign-in">next step</button></div>
+                        </form> 
                     </div>
                     <div><p id="learn-more"><a href="#">Learn more</a> about why we ask for this information.</p></div>
                 </div>
