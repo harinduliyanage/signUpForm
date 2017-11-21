@@ -57,5 +57,9 @@ h1{
     padding-left: 57vw;
 }
 #day{
+    margin-left: 13px;
     width: 50px;
+}
+#year{
+    width: 80px;
 }
