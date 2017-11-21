@@ -8,3 +8,38 @@ and open the template in the editor.
     Author     : Harindu.sul
 */
 
+#navBar{
+    background-color: rgb(241, 241, 241);
+    height:5vw;
+}
+#google-img{
+    padding-left: 0px;
+}
+#signInDiv{
+    text-align: right;
+    margin-top: 15px;
+}
+
+#btn-sign-in{
+    float: right;
+    background-color: rgb(75, 141, 248);
+    color: white;
+}
+
+#middle{
+    text-align: center;
+    font-family: 'Open Sans', arial;
+    color: #555;
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 27px;
+    margin-bottom: 50px;
+}
+
+.signUp-Box{
+    background-color: rgb(241, 241, 241);
+}
+
+#google-p{
+    padding-left: 160px;
+}
